@@ -50,6 +50,7 @@ import TechnologyApproval from "../pages/RequestForService/TechnologyApproval"
 import TechnologyCost from "../pages/RequestForService/TechnologyCost"
 import TechnologyContribution from "../pages/ContributeForOss/TechnologyContribution";
 import ContractorAllocation from "../pages/OSSWorks/ContractorAllocation";
+import WorksStart from "../pages/OSSWorks/WorksStart";
 
 import '../assets/css/style.css';
 import '../assets/css/responsive.css';
@@ -109,6 +110,7 @@ const AppRouter = () => (
         <Route path="/tech-cost/" component={TechnologyCost} />
         <Route path="/payment/" component={TechnologyContribution} />
         <Route path="/contractor-allocation/" component={ContractorAllocation} />
+        <Route path="/works-start/" component={WorksStart} />
     </React.Fragment>
 );
 
