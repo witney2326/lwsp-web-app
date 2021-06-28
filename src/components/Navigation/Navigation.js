@@ -27,10 +27,6 @@ import Logo from '../../assets/img/logo.png';
 import SmallLogo from '../../assets/img/small-logo.png';
 
 // Profile & user image path
-import profile from '../../assets/img/profile.jpg';
-import user1 from '../../assets/img/user/user1.jpg';
-import user2 from '../../assets/img/user/user2.jpg';
-import user3 from '../../assets/img/user/user3.jpg';
 
 class Navigation extends React.Component {
     state = {
@@ -100,12 +96,12 @@ class Navigation extends React.Component {
                                 <NavLink to="#" className="dropdown-item">
                                     <div className="message-item">
                                         <span className="user-pic">
-                                            <Image src={user1} alt="User Image" roundedCircle /> 
+                                            
                                             <span className="profile-status online"></span>
                                         </span>
                                     
                                         <span className="chat-content">
-                                            <h5 className="message-title">Aaron Rossi</h5> 
+                                            <h5 className="message-title">System Admin</h5> 
                                             <span className="mail-desc">Just sent a new comment!</span>
                                         </span>
                                         <span className="time">0 seconds ago</span>
@@ -115,12 +111,12 @@ class Navigation extends React.Component {
                                 <NavLink to="#" className="dropdown-item">
                                     <div className="message-item">
                                         <span className="user-pic">
-                                            <Image src={user2} alt="User Image" roundedCircle /> 
+                                            
                                             <span className="profile-status ofline"></span>
                                         </span>
                                     
                                         <span className="chat-content">
-                                            <h5 className="message-title">Marco Gomez</h5> 
+                                            <h5 className="message-title">Contractor Gibo</h5> 
                                             <span className="mail-desc">Just sent a new comment!</span>
                                         </span>
                                         <span className="time">5 minutes ago</span>
@@ -130,12 +126,12 @@ class Navigation extends React.Component {
                                 <NavLink to="#" className="dropdown-item">
                                     <div className="message-item">
                                         <span className="user-pic">
-                                            <Image src={user3} alt="User Image" roundedCircle /> 
+                                            
                                             <span className="profile-status away"></span>
                                         </span>
                                     
                                         <span className="chat-content">
-                                            <h5 className="message-title">Mitch Petty</h5> 
+                                            <h5 className="message-title">Contractor Walu</h5> 
                                             <span className="mail-desc">Just sent a new comment!</span>
                                         </span>
                                         <span className="time">9:00 AM</span>
@@ -168,27 +164,27 @@ class Navigation extends React.Component {
                                 <NavLink to="#" className="dropdown-item">
                                     <div className="message-item">
                                         <span className="user-pic">
-                                            <Image src={user1} alt="User Image" roundedCircle /> 
+                                            
                                             <span className="profile-status online"></span>
                                         </span>
                                     
                                         <span className="chat-content">
-                                            <h5 className="message-title">Aaron Rossi</h5> 
+                                            <h5 className="message-title">Admin</h5> 
                                             <span className="mail-desc">Just sent a new comment!</span>
                                         </span>
                                         <span className="time">0 seconds ago</span>
                                     </div>
                                 </NavLink>
 
-                                <NavLink to="#" className="dropdown-item">
+                                <NavLink to="/" className="dropdown-item">
                                     <div className="message-item">
                                         <span className="user-pic">
-                                            <Image src={user2} alt="User Image" roundedCircle /> 
+                                             
                                             <span className="profile-status ofline"></span>
                                         </span>
                                     
                                         <span className="chat-content">
-                                            <h5 className="message-title">Marco Gomez</h5> 
+                                            <h5 className="message-title">Contractor Gibo</h5> 
                                             <span className="mail-desc">Just sent a new comment!</span>
                                         </span>
                                         <span className="time">5 minutes ago</span>
@@ -198,14 +194,14 @@ class Navigation extends React.Component {
                                 <NavLink to="#" className="dropdown-item">
                                     <div className="message-item">
                                         <span className="user-pic">
-                                            <Image src={user3} alt="User Image" roundedCircle /> 
+                                            
                                             <span className="profile-status away"></span>
                                         </span>
                                     
                                         <span className="chat-content">
-                                            <h5 className="message-title">Mitch Petty</h5> 
+                                            <h5 className="message-title">Contractor Walu</h5> 
                                             <span className="mail-desc">
-                                                New order received! <span className="amount">$250</span>
+                                                New Assignments received! <span className="number">10</span>
                                             </span>
                                         </span>
                                         <span className="time">9:00 AM - 02-02-2019</span>
@@ -223,8 +219,8 @@ class Navigation extends React.Component {
                             <NavDropdown  
                                 title={
                                     <div className="menu-profile">
-                                        <span className="name">Aaron Rossi</span> 
-                                        <Image src={profile} alt="Profile Image" roundedCircle /> 
+                                        <span className="name">System Admin</span> 
+                                        
                                     </div>
                                 } 
                                 id="basic-nav-dropdown" className="profile-nav-item">
