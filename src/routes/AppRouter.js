@@ -53,6 +53,7 @@ import ContractorAllocation from "../pages/OSSWorks/ContractorAllocation";
 import WorksStart from "../pages/OSSWorks/WorksStart";
 import WorksProgress from "../pages/OSSWorks/WorksProgress";
 import WorksComplete from "../pages/OSSWorks/WorksComplete";
+import ContractorManagement from "../pages/System admin/ContractorManagement";
 
 import '../assets/css/style.css';
 import '../assets/css/responsive.css';
@@ -115,6 +116,7 @@ const AppRouter = () => (
         <Route path="/works-start/" component={WorksStart} />
         <Route path="/works-progress/" component={WorksProgress} />
         <Route path="/works-completion/" component={WorksComplete} />
+        <Route path="/contractor-management/" component={ContractorManagement} />
     </React.Fragment>
 );
 
