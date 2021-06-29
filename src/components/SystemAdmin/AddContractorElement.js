@@ -23,7 +23,8 @@ class AddContractorElement extends React.Component {
                                     </div>
                                     
                                     <Form>
-                                        <Form.Row>
+                                        
+                                        <Form.Row>                       
                                             <Form.Group as={Col} controlId="contractor-name">
                                                 <Form.Label>Contractor Name</Form.Label>
                                                 <Form.Control type="text" placeholder="Enter contractor name" />
