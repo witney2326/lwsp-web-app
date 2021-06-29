@@ -113,82 +113,10 @@ class Dashboard extends React.Component {
                             <TrendingProduct />
                         </Col>
                         
-                        <Col lg={12}>
-                            {/* File path: src/components/Dashboard/ThisMonthSales.js */}
-                            <ThisMonthSales />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col lg={6}>
-                            {/* File path: src/components/Dashboard/LastWeekSales.js */}
-                            <LastWeekSales />
-                        </Col>
-                        <Col lg={6}>
-                            {/* File path: src/components/Dashboard/TopRatedProducts.js */}
-                            <TopRatedProducts />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col lg={6}>
-                            {/* File path: src/components/Dashboard/Tickets.js */}
-                            <Tickets />
-                        </Col>
-
-                        <Col lg={6}>
-                            {/* File path: src/components/Dashboard/ProductCategories.js */}
-                            <ProductCategories />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col lg={6}>
-                            {/* File path: src/components/Dashboard/UserActivities.js */}
-                            <UserActivities />
-                        </Col>
-
-                        <Col lg={6}>
-                            {/* File path: src/components/Dashboard/NewUsers.js */}
-                            <NewUsers />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col lg={4}>
-                            {/* File path: src/components/Deshboard/Payments/PaymentsDone.js */}
-                            <PaymentsDone />
-                        </Col>
-
-                        <Col lg={4}>
-                            {/* File path: src/components/Deshboard/Payments/PaymentsDue.js */}
-                            <PaymentsDue />
-                        </Col>
-
-                        <Col lg={4}>
-                            {/* File path: src/components/Deshboard/Payments/PaymentsWithdraw.js */}
-                            <PaymentsWithdraw />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col lg={12}>
-                            {/* File path: src/components/Dashboard/VisitorStats.js */}
-                            <VisitorStats />
-                        </Col>
-                    </Row>
-                    
-                    <Row>
-                        <Col lg={6}>
-                            {/* File path: src/components/Dashboard/BestSellers.js */}
-                            <BestSellers />
-                        </Col>
                         
-                        <Col lg={6}>
-                            {/* File path: src/components/MapContainer.js */}
-                            <MapContainer />
-                        </Col>
                     </Row>
+
+ 
 
                     {/* Footer */}
                     <div className="flex-grow-1"></div>

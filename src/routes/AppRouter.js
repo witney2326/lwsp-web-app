@@ -22,7 +22,6 @@ import Tables from '../pages/UI-Components/Tables';
 import TemplateTabs from '../pages/UI-Components/TemplateTabs';
 import Signup from '../pages/Signup';
 import Login from '../pages/Login';
-import ForgotPassword from '../pages/ForgotPassword';
 import Profile from '../pages/Profile';
 import ProfileSettings from '../pages/ProfileSettings';
 import LineCharts from '../pages/Apex-Charts/LineCharts';
@@ -55,6 +54,9 @@ import WorksProgress from "../pages/OSSWorks/WorksProgress";
 import WorksComplete from "../pages/OSSWorks/WorksComplete";
 import ContractorManagement from "../pages/System admin/ContractorManagement";
 import ProductManagement from "../pages/System admin/ProductManagement";
+import UserManagement from "../pages/System admin/UserManagement";
+import RegisterUser from "../pages/System admin/RegisterUser";
+import ForgotPassword from "../pages/System admin/ForgotPassword";
 
 import '../assets/css/style.css';
 import '../assets/css/responsive.css';
@@ -86,7 +88,6 @@ const AppRouter = () => (
         <Route path="/ui-components/tabs/" component={TemplateTabs} />  
         <Route path="/signup/" component={Signup} />
         <Route path="/login/" component={Login} />
-        <Route path="/forgot-password/" component={ForgotPassword} />
         <Route path="/profile/" component={Profile} />
         <Route path="/profile-settings/" component={ProfileSettings} />
         <Route path="/line-charts/" component={LineCharts} />
@@ -119,6 +120,9 @@ const AppRouter = () => (
         <Route path="/works-completion/" component={WorksComplete} />
         <Route path="/contractor-management/" component={ContractorManagement} />
         <Route path="/products-services/" component={ProductManagement} />
+        <Route path="/user-management/" component={UserManagement} />
+        <Route path="/register-user/" component={RegisterUser} />
+        <Route path="/forgot-password/" component={ForgotPassword} />
     </React.Fragment>
 );
 

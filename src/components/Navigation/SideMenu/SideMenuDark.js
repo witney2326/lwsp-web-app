@@ -32,7 +32,7 @@ class SideMenuDark extends React.Component {
                                     <Icon.ChevronRight 
                                         className="icon" 
                                     /> 
-                                    Default Dashboard
+                                    LWSP Default
                                 </NavLink>
                                 <NavLink 
                                     to="/dashboard-two/" 
@@ -41,7 +41,7 @@ class SideMenuDark extends React.Component {
                                     <Icon.ChevronRight 
                                         className="icon" 
                                     /> 
-                                    eCommerce Dashboard
+                                    LWSP Product ans Sales
                                 </NavLink>
                                 <NavLink 
                                     to="/dashboard-three/" 
@@ -50,12 +50,10 @@ class SideMenuDark extends React.Component {
                                     <Icon.ChevronRight 
                                         className="icon" 
                                     /> 
-                                    Analytics Dashboard
+                                    LWSP Analytics
                                 </NavLink>
                             </NavDropdown>
 
-                            
-                            <h6>Application Settings</h6>
 
                             <NavDropdown 
                                 className="super-color" 
@@ -91,15 +89,7 @@ class SideMenuDark extends React.Component {
                                     /> 
                                     Products and Services
                                 </NavLink>
-                                <NavLink 
-                                    activeClassName="drpMenu"
-                                    to="/roles-permissions/" 
-                                    className="dropdown-item">
-                                    <Icon.UserCheck 
-                                        className="icon" 
-                                    />
-                                    Roles and Permissions
-                                </NavLink>
+                                
                                 <NavLink 
                                     activeClassName="drpMenu"
                                     to="/user-management/" 
@@ -110,8 +100,7 @@ class SideMenuDark extends React.Component {
                                     User Management
                                 </NavLink>
                             </NavDropdown>
-                            <h6>Beneficiaries</h6>
-
+                            
                             <NavLink to="/beneficiary-targeting/" className="nav-link">
                                 <Icon.Database 
                                     className="icon"
@@ -119,7 +108,7 @@ class SideMenuDark extends React.Component {
                                 <span className="title">Project Beneficiaries</span>
                             </NavLink>
 
-                            <h6>OSS Delivery Components</h6>
+                         
                             <NavDropdown 
                                 className="super-color" 
                                 title= {
@@ -190,15 +179,7 @@ class SideMenuDark extends React.Component {
                                     </div>
                                 }
                                 id="basic-nav-dropdown">
-                                <NavLink  
-                                    activeClassName="drpMenu"
-                                    to="/payment-options/" 
-                                    className="dropdown-item">
-                                    <Icon.DollarSign 
-                                        className="icon" 
-                                    />
-                                    Payment Options
-                                </NavLink>
+                                
                                 <NavLink 
                                     activeClassName="drpMenu"
                                     to="/payment/" 
@@ -206,26 +187,9 @@ class SideMenuDark extends React.Component {
                                     <Icon.DollarSign 
                                         className="icon" 
                                     /> 
-                                    Pay
+                                    Contribute for Service
                                 </NavLink>
-                                <NavLink 
-                                    activeClassName="drpMenu"
-                                    to="/payment-verification/" 
-                                    className="dropdown-item">
-                                    <Icon.Check 
-                                        className="icon" 
-                                    />
-                                    Payment Verification
-                                </NavLink>
-                                <NavLink 
-                                    activeClassName="drpMenu"
-                                    to="/contribution-status/" 
-                                    className="dropdown-item">
-                                    <Icon.DollarSign
-                                        className="icon" 
-                                    />
-                                    Contribution Status
-                                </NavLink>
+                                
                             </NavDropdown>
 
                             <NavDropdown 
@@ -326,7 +290,7 @@ class SideMenuDark extends React.Component {
                                     Overall Reports
                                 </NavLink>
                             </NavDropdown>
-                            <h6>Grievance Management</h6>
+                            
                             <NavDropdown 
                                 className="super-color" 
                                 title= {
@@ -371,229 +335,7 @@ class SideMenuDark extends React.Component {
                                     Resolved Complaints
                                 </NavLink>
                             </NavDropdown>
-                            <h6>Notifications</h6>
-                            <NavLink to="/inbox/" className="nav-link">
-                                <Icon.Inbox 
-                                    className="icon"
-                                /> 
-                                <span className="title">Inbox</span>
-                            </NavLink>
-
-
-
-                            
-                            
-
-                            <NavDropdown title= {
-                                <div className="dropdown-title">
-                                    <Icon.User 
-                                        className="icon"
-                                    /> 
-                                    <span className="title">
-                                        User 
-                                        <Icon.ChevronRight 
-                                            className="icon fr"
-                                        /> 
-                                    </span>
-                                </div>
-                            }
-                            id="basic-nav-dropdown">
-                                <NavLink 
-                                    to="/signup/" 
-                                    className="dropdown-item" 
-                                    target="_blank">
-                                    <Icon.UserPlus 
-                                        className="icon" 
-                                    /> 
-                                    Sign Up
-                                </NavLink>
-                                <NavLink 
-                                    to="/login/" 
-                                    className="dropdown-item" 
-                                    target="_blank"> 
-                                    <Icon.UserCheck 
-                                        className="icon" 
-                                    /> 
-                                    Login
-                                </NavLink>
-                                <NavLink 
-                                    to="/forgot-password/" 
-                                    className="dropdown-item" 
-                                    target="_blank">
-                                    <Icon.Unlock 
-                                        className="icon" 
-                                    /> 
-                                    Forgot Password
-                                </NavLink>
-                            </NavDropdown>
-                            
-                            <NavDropdown title= {
-                                <div className="dropdown-title">
-                                    <Icon.BarChart2 
-                                        className="icon"
-                                    /> 
-                                    <span className="title">
-                                        Apex Charts 
-                                        <Icon.ChevronRight 
-                                            className="icon fr"
-                                        /> 
-                                    </span>
-                                </div>
-                            }
-                            id="basic-nav-dropdown">
-                                <NavLink 
-                                    to="/line-charts/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Line Charts
-                                </NavLink>
-                                <NavLink 
-                                    to="/area-charts/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Area Charts
-                                </NavLink>
-                                <NavLink 
-                                    to="/column-charts/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Column Charts
-                                </NavLink>
-                                <NavLink 
-                                    to="/bar-charts/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Bar Charts
-                                </NavLink>
-                                <NavLink 
-                                    to="/mixed-charts/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Mixed Charts
-                                </NavLink>
-                                <NavLink 
-                                    to="/pie-donuts-charts/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Pie and Donuts Charts
-                                </NavLink>
-                            </NavDropdown>
-
-                            
-                            
-                            
-
-                            <NavDropdown title= {
-                                <div className="dropdown-title">
-                                    <Icon.FileText 
-                                        className="icon"
-                                    /> 
-                                    <span className="title">
-                                        Pages 
-                                        <Icon.ChevronRight 
-                                            className="icon fr"
-                                        /> 
-                                    </span>
-                                </div>
-                            }
-                            id="basic-nav-dropdown">
-                                <NavLink 
-                                    to="/users-card/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Users Card
-                                </NavLink>
-
-                                <NavLink 
-                                    to="/notifications/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    <span className="title">Notifications</span>
-                                </NavLink>
-
-                                <NavLink 
-                                    to="/time-line/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Time line
-                                </NavLink>
-
-                                <NavLink 
-                                    to="/invoice-template/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Invoice Template
-                                </NavLink>
-
-                                <NavLink 
-                                    to="/gallery/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Gallery
-                                </NavLink>
-
-                                <NavLink 
-                                    to="/faq/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Faq
-                                </NavLink>
-                                <NavLink 
-                                    to="/pricing/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Pricing
-                                </NavLink>
-
-                                <NavLink 
-                                    to="/error-404/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Error 404 
-                                </NavLink>
-                            </NavDropdown>
+  
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
