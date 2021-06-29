@@ -1,21 +1,21 @@
 import React from 'react';
 import * as Icon from 'react-feather';
 
-const MonthlySales = () => {
+const VerifiedRequests = () => {
     return (
-        <div className="stats-card purple-card mb-4">
+        <div className="stats-card success-card mb-4">
             <h3>
-                $7,590
+                0
                 <Icon.ArrowUpCircle 
                     className="icon"
                 />
             </h3>
-            <p>Last Month Sales</p>
+            <p>Verified OSS Requests</p>
             <i 
-                className="lni-cart-full" 
+                className="lni-check-mark-circle" 
             />
         </div>
     );
 };
 
-export default MonthlySales;
+export default VerifiedRequests;

@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactEcharts from 'echarts-for-react';
 
-class SalesByCountries extends React.Component {
+class ProductSalesByArea extends React.Component {
     render() {
         return (
             <div className="card mb-4 overflow-hidden">
                 <div className="card-body">
                     <div className="card-header">
-                        <h5 className="card-title">Sales by Countries</h5>
+                        <h5 className="card-title">Product Sales by Area/Hotspot</h5>
                     </div>
 
                     <ReactEcharts 
@@ -23,7 +23,7 @@ class SalesByCountries extends React.Component {
     }
 }
 
-SalesByCountries.defaultProps = {
+ProductSalesByArea.defaultProps = {
     data: {
         tooltip: {
             trigger: 'item',
@@ -31,16 +31,16 @@ SalesByCountries.defaultProps = {
         },
         series: [
             {
-                name: 'Country',
+                name: 'Area',
                 type: 'pie',
                 radius: '60%',
                 center: ['50%', '50%'],
                 data:[
-                    {value:335, name:'Germany'},
-                    {value:800, name:'USA'},
-                    {value:234, name:'Italy'},
-                    {value:135, name:'Spain'},
-                    {value:1548, name:'UK'}
+                    {value:335, name:'Area 36'},
+                    {value:800, name:'Chinsapo'},
+                    {value:234, name:'Area 49 Dubai'},
+                    {value:135, name:'Mtandire'},
+                    {value:1548, name:'Phetekere'}
                 ],
                 itemStyle: {
                     emphasis: {
@@ -54,4 +54,4 @@ SalesByCountries.defaultProps = {
     }
 };
 
-export default SalesByCountries;
+export default ProductSalesByArea;

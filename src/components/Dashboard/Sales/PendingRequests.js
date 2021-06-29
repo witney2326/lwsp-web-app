@@ -1,16 +1,16 @@
 import React from 'react';
 import * as Icon from 'react-feather';
 
-const PendingOrders = () => {
+const PendingRequests = () => {
     return (
         <div className="stats-card danger-card mb-4">
             <h3>
-                1277
+                0
                 <Icon.ArrowDownCircle 
                     className="icon"
                 />
             </h3>
-            <p>Pending Orders</p>
+            <p>Pending OSS Requests</p>
             <i 
                 className="lni-reload" 
             />
@@ -18,4 +18,4 @@ const PendingOrders = () => {
     );
 };
 
-export default PendingOrders;
+export default PendingRequests;

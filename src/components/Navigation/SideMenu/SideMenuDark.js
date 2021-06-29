@@ -34,24 +34,7 @@ class SideMenuDark extends React.Component {
                                     /> 
                                     LWSP Default
                                 </NavLink>
-                                <NavLink 
-                                    to="/dashboard-two/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu"> 
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    LWSP Product ans Sales
-                                </NavLink>
-                                <NavLink 
-                                    to="/dashboard-three/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    LWSP Analytics
-                                </NavLink>
+                                
                             </NavDropdown>
 
 

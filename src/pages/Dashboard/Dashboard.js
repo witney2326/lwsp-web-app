@@ -2,27 +2,13 @@ import React from 'react';
 import Navigation from '../../components/Navigation/Navigation';
 import {Row, Breadcrumb, Col } from 'react-bootstrap';
 import Footer from '../Footer/Footer';
-import ThisYearSales from '../../components/Dashboard/ThisYearSales';
-import ThisMonthSales from '../../components/Dashboard/ThisMonthSales';
-import TrendingProduct from '../../components/Dashboard/TrendingProduct';
-import SalesByCountries from '../../components/Dashboard/SalesByCountries';
-import LastWeekSales from '../../components/Dashboard/LastWeekSales';
-import TopRatedProducts from '../../components/Dashboard/TopRatedProducts';
-import Tickets from '../../components/Dashboard/Tickets';
-import ProductCategories from '../../components/Dashboard/ProductCategories';
-import UserActivities from '../../components/Dashboard/UserActivities';
-import NewUsers from '../../components/Dashboard/NewUsers';
-import PaymentsDone from '../../components/Dashboard/Payments/PaymentsDone';
-import PaymentsDue from '../../components/Dashboard/Payments/PaymentsDue';
-import PaymentsWithdraw from '../../components/Dashboard/Payments/PaymentsWithdraw';
-import BestSellers from '../../components/Dashboard/BestSellers';
-import MapContainer from '../../components/MapContainer';
-import MonthlySales from '../../components/Dashboard/Sales/MonthlySales';
-import TotalOrders from '../../components/Dashboard/Sales/TotalOrders';
-import PendingOrders from '../../components/Dashboard/Sales/PendingOrders';
-import CompletedOrders from '../../components/Dashboard/Sales/CompletedOrders';
 import Loader from '../../components/Common/Loader';
-import VisitorStats from '../../components/Dashboard/VisitorStats';
+import MonthlyTotalHouseholdsContributions from '../../components/Dashboard/Sales/MonthlyTotalHouseholdsContributions';
+import TotalProductRequest from '../../components/Dashboard/Sales/TotalProductRequest';
+import VerifiedRequests from '../../components/Dashboard/Sales/VerifiedRequests';
+import PendingRequests from '../../components/Dashboard/Sales/PendingRequests';
+import ProductSalesByArea from '../../components/Dashboard/ProductSalesByArea';
+import TrendingOSSProduct from '../../components/Dashboard/TrendingOSSProduct';
 
 class Dashboard extends React.Component {
     state = {
@@ -66,9 +52,7 @@ class Dashboard extends React.Component {
                     {/* Breadcrumb */}
                     <div className="main-content-header">
                         <Breadcrumb>
-                            <h1>Dashboard</h1>
-                            <Breadcrumb.Item to="/dashboard">Dashboard</Breadcrumb.Item>
-                            <Breadcrumb.Item active>Dashboard v.1</Breadcrumb.Item>
+                            <h1>LWSP Dashboard</h1>
                         </Breadcrumb>
                     </div>
                     {/* End Breadcrumb */}
@@ -76,41 +60,34 @@ class Dashboard extends React.Component {
                     <Row>
                         <Col sm={6} lg={3}>
                             {/* File path: src/components/Dashboard/Sales/MonthlySales.js */}
-                            <MonthlySales />
+                            <MonthlyTotalHouseholdsContributions />
                         </Col>
 
                         <Col sm={6} lg={3}>
                             {/* File path: src/components/Dashboard/Sales/TotalOrders.js */}
-                            <TotalOrders />
+                            <TotalProductRequest />
                         </Col>
  
                         <Col sm={6} lg={3}>
                             {/* File path: src/components/Dashboard/Sales/CompletedOrders.js */}
-                            <CompletedOrders />
+                            <VerifiedRequests />
                         </Col>
 
                         <Col sm={6} lg={3}>
                             {/* File path: src/components/Dashboard/Sales/PendingOrders.js */}
-                            <PendingOrders />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col lg={12}>
-                            {/* File path: src/components/Dashboard/ThisYearSales.js */}
-                            <ThisYearSales />
+                            <PendingRequests />
                         </Col>
                     </Row>
 
                     <Row>
                         <Col lg={5}>
                             {/* File path: src/components/Dashboard/SalesByCountries.js */}
-                            <SalesByCountries />
+                            <ProductSalesByArea />
                         </Col>
 
                         <Col lg={7}>
                             {/* File path: src/components/Dashboard/TrendingProduct.js */}
-                            <TrendingProduct />
+                            <TrendingOSSProduct />
                         </Col>
                         
                         

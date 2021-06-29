@@ -1,7 +1,7 @@
 import React from 'react';
 import Chart from 'react-apexcharts'
 
-class TrendingProduct extends React.Component {
+class TrendingOSSProduct extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -28,11 +28,11 @@ class TrendingProduct extends React.Component {
                     },
                 },
                 xaxis: {
-                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    categories: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec','Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', ],
                 }
             },
             series: [{
-                name: "MacBook Pro",
+                name: "SVIP Latrine",
                 data: [10, 41, 35, 51, 49, 62, 69, 91, 148, 160, 150, 160]
             }],
         }
@@ -43,7 +43,7 @@ class TrendingProduct extends React.Component {
             <div className="card mb-4">
                 <div className="card-body">
                     <div className="card-header">
-                        <h5 className="card-title">Product Trends by Month</h5>
+                        <h5 className="card-title">Trending OSS Product </h5>
                     </div>
                     <div id="chart" className="apexcharts-content">
                         <Chart options={this.state.options} series={this.state.series} type="line" height={335} />
@@ -54,4 +54,4 @@ class TrendingProduct extends React.Component {
     }
 }
 
-export default TrendingProduct;
+export default TrendingOSSProduct;

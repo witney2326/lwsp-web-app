@@ -34,24 +34,7 @@ class SideMenuLight extends React.Component {
                                     /> 
                                     Default Dashboard
                                 </NavLink>
-                                <NavLink 
-                                    to="/dashboard-two/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu"> 
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    eCommerce Dashboard
-                                </NavLink>
-                                <NavLink 
-                                    to="/dashboard-three/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Analytics Dashboard
-                                </NavLink>
+                                
                             </NavDropdown>
 
                             <NavLink to="/inbox/" className="nav-link">

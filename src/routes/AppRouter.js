@@ -1,8 +1,6 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import Dashboard from '../pages/Dashboard/Dashboard';
-import DashboardTwo from '../pages/Dashboard/DashboardTwo';
-import DashboardThree from '../pages/Dashboard/DashboardThree';
 import Inbox from '../pages/Inbox/Inbox';
 import Chat from '../pages/Chat/Chat';
 import Todos from '../pages/Todos';
@@ -67,8 +65,6 @@ const AppRouter = () => (
             <Redirect to="/dashboard/" />
         )} />
         <Route path="/dashboard/" exact component={Dashboard} />
-        <Route path="/dashboard-two/" exact component={DashboardTwo} />
-        <Route path="/dashboard-three/" exact component={DashboardThree} />
         <Route path="/inbox/" component={Inbox} />
         <Route path="/chat/" component={Chat} />
         <Route path="/todos/" component={Todos} />
