@@ -38,10 +38,10 @@ const BTSearchElement = () => {
                            </Form.Control>
                        </Form.Group>
 
-                       <Form.Group as={Col} controlId="ta">
+                       <Form.Group as={Col} controlId="plot">
                            <Form.Label>Plot No.</Form.Label>
                            <Form.Control as="select">
-                               <option>Select TA...</option>
+                               <option>Select plot...</option>
                                <option>...</option>
                            </Form.Control>
                        </Form.Group>                      

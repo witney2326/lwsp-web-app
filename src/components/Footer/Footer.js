@@ -4,7 +4,7 @@ class Footer extends React.Component {
         return(
             <footer className="footer mt-2">
                 <p>
-                    Allrights Reserved @ 2019 BRIDLE by <a href="https://envytheme.com" rel="noopener noreferrer" target="_blank">EnvyTheme</a>
+                    Allrights Reserved @ 2021 LWSP
                 </p>
             </footer>
         )

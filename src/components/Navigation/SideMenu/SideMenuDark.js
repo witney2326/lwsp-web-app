@@ -84,13 +84,42 @@ class SideMenuDark extends React.Component {
                                 </NavLink>
                             </NavDropdown>
                             
-                            <NavLink to="/beneficiary-targeting/" className="nav-link">
-                                <Icon.Database 
-                                    className="icon"
-                                /> 
-                                <span className="title">Project Beneficiaries</span>
-                            </NavLink>
-
+                            <NavDropdown 
+                                className="super-color" 
+                                title= {
+                                    <div className="dropdown-title">
+                                        <Icon.Filter 
+                                            className="icon"
+                                        />
+                                        <span className="title">
+                                            Household Beneficiaries
+                                            <Icon.ChevronRight 
+                                                className="icon fr"
+                                            />
+                                        </span>
+                                    </div>
+                                }
+                                id="basic-nav-dropdown">
+                                <NavLink  
+                                    activeClassName="drpMenu"
+                                    to="/registration/" 
+                                    className="dropdown-item">
+                                    <Icon.Database 
+                                        className="icon" 
+                                    />
+                                    Registration
+                                </NavLink>
+                                <NavLink 
+                                    activeClassName="drpMenu"
+                                    to="/beneficiary-targeting/" 
+                                    className="dropdown-item"> 
+                                    <Icon.Database 
+                                        className="icon" 
+                                    /> 
+                                    Targeting 
+                                </NavLink>
+                                
+                            </NavDropdown>
                          
                             <NavDropdown 
                                 className="super-color" 

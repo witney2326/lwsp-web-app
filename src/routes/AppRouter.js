@@ -55,6 +55,7 @@ import ProductManagement from "../pages/System admin/ProductManagement";
 import UserManagement from "../pages/System admin/UserManagement";
 import RegisterUser from "../pages/System admin/RegisterUser";
 import ForgotPassword from "../pages/System admin/ForgotPassword";
+import BeneficiaryAdd from "../pages/BeneficiaryTargeting/BeneficiaryAdd";
 
 import '../assets/css/style.css';
 import '../assets/css/responsive.css';
@@ -119,6 +120,7 @@ const AppRouter = () => (
         <Route path="/user-management/" component={UserManagement} />
         <Route path="/register-user/" component={RegisterUser} />
         <Route path="/forgot-password/" component={ForgotPassword} />
+        <Route path="/registration/" component={BeneficiaryAdd} />
     </React.Fragment>
 );
 
