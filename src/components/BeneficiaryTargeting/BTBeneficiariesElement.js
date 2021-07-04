@@ -38,17 +38,13 @@ const BTBeneficiariesElement = () => {
                                     <td>Kabango</td>
                                     <td>0999987009</td>
                                     <td className="text-left">
-                                        <ButtonToolbar>
-                                            <Button variant="secondary" size="xs" className="mt-2 mr-2 rounded-0">
-                                                view
-                                            </Button>
-                                            <Button variant="secondary" size="xs" className="mt-2 mr-2">
-                                                edit
-                                            </Button>
-                                            <Button variant="danger" size="xs" className="mt-2 mr-2">
-                                                del
-                                            </Button>
-                                        </ButtonToolbar>  
+                                        
+                                        <ButtonToolbar >
+                                            <Button variant="outline-primary" className="mt-2 mr-2"> View</Button>
+                                            <Button variant="outline-success" className="mt-2 mr-2"> Edit</Button>
+                                            <Button variant="outline-danger" className="mt-2 mr-2">Del</Button>       
+                                        </ButtonToolbar>
+                                          
                                     </td>
                                 </tr>
 

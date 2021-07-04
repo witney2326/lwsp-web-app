@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Breadcrumb, Form, Button } from 'react-bootstrap';
+import { Row, Col, Breadcrumb, Form, Button, ButtonToolbar } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 const BTAddElement = () => {
@@ -15,12 +15,16 @@ const BTAddElement = () => {
 
                         <Form>
                             <Form.Row>
-                                <Form.Group as={Col} controlId="area">
+                                <Form.Group as={Col} controlId="ward">
                                     <Form.Label>Ward</Form.Label>
                                     <Form.Control as="select">
                                         <option>Select Ward...</option>
                                         <option>...</option>
                                     </Form.Control>
+                                </Form.Group>
+                                <Form.Group as={Col} controlId="ward-code">
+                                    <Form.Label>Ward-Code </Form.Label>
+                                    <Form.Control type="text" placeholder="ward-code" disabled />  
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="area">
                                     <Form.Label>City Area</Form.Label>
@@ -29,25 +33,28 @@ const BTAddElement = () => {
                                         <option>...</option>
                                     </Form.Control>
                                 </Form.Group>
-
+                                <Form.Group as={Col} controlId="area-code">
+                                    <Form.Label>Area-Code </Form.Label>
+                                    <Form.Control type="text" placeholder="area-code" disabled />  
+                                </Form.Group>
                                 <Form.Group as={Col} controlId="block">
                                     <Form.Label>Block name </Form.Label>
                                     <Form.Control type="text" placeholder="block name" />
                                 </Form.Group>
 
                                 <Form.Group as={Col} controlId="plot">
-                                    <Form.Label>plot number </Form.Label>
+                                    <Form.Label>HH Plot No. </Form.Label>
                                     <Form.Control type="text" placeholder="plot number" />
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="contact-number">
-                                    <Form.Label>Phone number </Form.Label>
+                                    <Form.Label>HH Phone No. </Form.Label>
                                     <Form.Control type="text" placeholder="phone number" />
                                 </Form.Group>
                             </Form.Row>
 
                             <Form.Row>
                                 <Form.Group as={Col} controlId="hhname">
-                                    <Form.Label>Household Name </Form.Label>
+                                    <Form.Label>HH Name </Form.Label>
                                     <Form.Control type="text" placeholder="Household name" />
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="age-category">
@@ -61,7 +68,7 @@ const BTAddElement = () => {
                                 </Form.Group>
 
                                 <Form.Group as={Col} controlId="economic livelihood">
-                                    <Form.Label>Main Source of Livelihood</Form.Label>
+                                    <Form.Label>Source of Livelihood</Form.Label>
                                     <Form.Control as="select">
                                         <option>...</option>
                                         <option>Begging</option>
@@ -87,9 +94,30 @@ const BTAddElement = () => {
                                         <option>...</option>
                                     </Form.Control>
                                 </Form.Group>
+                                <Form.Group as={Col} controlId="vulnerability">
+                                    <Form.Label>HH Vulnerable?</Form.Label>
+                                    <Form.Control as="select">
+                                        <option>...</option>
+                                        <option>YES</option>
+                                        <option>NO</option>
+                                    </Form.Control>
+                                </Form.Group>
+
+                                <Form.Group as={Col} controlId="poor">
+                                    <Form.Label>HH Poor?</Form.Label>
+                                    <Form.Control as="select">
+                                        <option>...</option>
+                                        <option>YES</option>
+                                        <option>NO</option>
+                                    </Form.Control>
+                                </Form.Group>
                                 
-                                <Form.Group as={Col} controlId="Household-Ownership-Status">
-                                    <Form.Label>Household Ownership Status</Form.Label>
+
+                            </Form.Row>
+
+                            <Form.Row>
+                            <Form.Group as={Col} controlId="Household-Ownership-Status">
+                                    <Form.Label>HH Ownership Status</Form.Label>
                                     <Form.Control as="select">
                                         <option>...</option>
                                         <option>Owned</option>
@@ -100,12 +128,8 @@ const BTAddElement = () => {
                                         <option>Rented</option>
                                     </Form.Control>
                                 </Form.Group>
-
-                            </Form.Row>
-
-                            <Form.Row>
                             <Form.Group as={Col} controlId="Structure-Location-Zone">
-                                    <Form.Label>Household Structure Location Zone</Form.Label>
+                                    <Form.Label>HH Structure Location Zone</Form.Label>
                                     <Form.Control as="select">
                                         <option>...</option>
                                         <option>On Land Zoned as residential area</option>
@@ -117,7 +141,7 @@ const BTAddElement = () => {
                                     </Form.Control>
                                 </Form.Group>
                                 <Form.Group as={Col} controlId="Household-Latrine">
-                                    <Form.Label>Household Latrine</Form.Label>
+                                    <Form.Label>HH Latrine</Form.Label>
                                     <Form.Control as="select">
                                         <option>...</option>
                                         <option>No Latrine</option>
@@ -129,36 +153,26 @@ const BTAddElement = () => {
                                     </Form.Control>
                                 </Form.Group>
 
-                                <Form.Group as={Col} controlId="vulnerability">
-                                    <Form.Label>Household Vulnerable?</Form.Label>
-                                    <Form.Control as="select">
-                                        <option>...</option>
-                                        <option>YES</option>
-                                        <option>NO</option>
-                                    </Form.Control>
-                                </Form.Group>
-
-                                <Form.Group as={Col} controlId="poor">
-                                    <Form.Label>Household Poor?</Form.Label>
-                                    <Form.Control as="select">
-                                        <option>...</option>
-                                        <option>YES</option>
-                                        <option>NO</option>
-                                    </Form.Control>
-                                </Form.Group>
+                                
 
                                 <Form.Group as={Col} controlId="fully-contribute">
-                                    <Form.Label>Pay Full for OSS?</Form.Label>
+                                    <Form.Label>HH Identification?</Form.Label>
                                     <Form.Control as="select">
                                         <option>...</option>
-                                        <option>YES</option>
-                                        <option>NO</option>
+                                        <option>CBT</option>
+                                        <option>Self</option>
                                     </Form.Control>
                                 </Form.Group>
+
+                                <Form.Group as={Col} controlId="HH-code">
+                                    <Form.Label>HH-Code </Form.Label>
+                                    <Form.Control type="text" placeholder="HH-code" disabled />  
+                                </Form.Group>
                             </Form.Row>
-                            <Button variant="primary" type="submit">
-                                Register Beneficiary
-                            </Button>
+                            <ButtonToolbar >
+                                <Button variant="outline-primary" className="mt-2 mr-2"> Compute HH Code</Button>
+                                <Button variant="outline-success" className="mt-2 mr-2">Register Beneficiary</Button>       
+                            </ButtonToolbar>
                         </Form>
                     </div>
                 </div>

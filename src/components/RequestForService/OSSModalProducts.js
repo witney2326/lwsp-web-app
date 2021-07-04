@@ -1,18 +1,7 @@
 import React from 'react';
-import {Row, Col, Breadcrumb, Image} from 'react-bootstrap';
-import { Link } from "react-router-dom";
-import Navigation from '../../components/Navigation/Navigation';
-
-import VerticallyCenteredModal from '../../pages/UI-Components/VerticallyCenteredModal';
+import {Row, Col } from 'react-bootstrap';
 import SVIPModal from '../../components/RequestForService/SVIPModal'
 import SVIPModal2 from '../../components/RequestForService/SVIPModal2'
-import ModalWithGrid from '../../pages/UI-Components/ModalWithGrid';
-import SmallAndLargeModal from '../../pages/UI-Components/SmallAndLargeModal';
-import CustomModal from '../../pages/UI-Components/CustomModal';
-import Footer from '../Footer/Footer';
-import SIV from '../../assets/img/singleVIP2.jpg'
-
-import BasicModal from '../../pages/UI-Components/BasicModal'
 import TwinVIPModal2 from '../../components/RequestForService/TwinVIPModal2';
 import TwinVIPModal1 from '../../components/RequestForService/TwinVIPModal1';
 import PourFlashModal2 from '../../components/RequestForService/PourFlashModal2';
