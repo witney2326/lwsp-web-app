@@ -58,6 +58,7 @@ import ForgotPassword from "../pages/System admin/ForgotPassword";
 import BeneficiaryAdd from "../pages/BeneficiaryTargeting/BeneficiaryAdd";
 import HHProgress from "../pages/Reports/HHProgress";
 import AreaProgress from "../pages/Reports/AreaProgress";
+import CityProgress from "../pages/Reports/CityProgress";
 
 import '../assets/css/style.css';
 import '../assets/css/responsive.css';
@@ -125,6 +126,7 @@ const AppRouter = () => (
         <Route path="/registration/" component={BeneficiaryAdd} />
         <Route path="/household-reports/" component={HHProgress} />
         <Route path="/area-reports/" component={AreaProgress} />
+        <Route path="/project-reports/" component={CityProgress} />
     </React.Fragment>
 );
 
