@@ -4,7 +4,7 @@ class Footer extends React.Component {
         return(
             <footer className="footer mt-2">
                 <p>
-                    Allrights Reserved @ 2021 Lilongwe Water and Sanitation Project Developed by Wilok Concepts
+                    Allrights Reserved @ 2021 LWSP
                 </p>
             </footer>
         )

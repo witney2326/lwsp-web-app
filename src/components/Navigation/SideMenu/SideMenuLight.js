@@ -10,7 +10,7 @@ class SideMenuLight extends React.Component {
             <div className={`sidemenu-area sidemenu-light ${this.props.sideMenu ? 'sidemenu-toggle' : ''}`}>
                 <Navbar className={`sidemenu ${this.props.sideMenu ? 'hide-nav-title' : ''}`} >
                     <Navbar.Collapse>
-                        <Nav>
+                    <Nav>
                             <NavDropdown title= {
                                 <div className="dropdown-title">
                                     <Icon.Grid 
@@ -32,62 +32,21 @@ class SideMenuLight extends React.Component {
                                     <Icon.ChevronRight 
                                         className="icon" 
                                     /> 
-                                    Default Dashboard
+                                    LWSP Default
                                 </NavLink>
                                 
                             </NavDropdown>
 
-                            <NavLink to="/inbox/" className="nav-link">
-                                <Icon.Inbox 
-                                    className="icon"
-                                /> 
-                                <span className="title">Inbox</span>
-                            </NavLink>
 
-                            <NavLink to="/chat/" className="nav-link">
-                                <Icon.MessageSquare 
-                                    className="icon"
-                                /> 
-                                <span className="title">Chat</span>
-                            </NavLink>
-
-                            <NavLink to="/todos/" className="nav-link">
-                                <Icon.CheckSquare 
-                                    className="icon"
-                                /> 
-                                <span className="title">Todo List</span>
-                            </NavLink>
-
-                            <NavLink to="/notes/" className="nav-link">
-                                <Icon.FileText 
-                                    className="icon"
-                                />
-                                <span className="title">Notes</span>
-                            </NavLink>
-
-                            <NavLink to="/calendar/" className="nav-link">
-                                <Icon.Calendar 
-                                    className="icon"
-                                />
-                                <span className="title">Calendar</span>
-                            </NavLink>
-
-                            <NavLink to="/search/" className="nav-link">
-                                <Icon.Search 
-                                    className="icon"
-                                />
-                                <span className="title">Search</span>
-                            </NavLink>
- 
                             <NavDropdown 
                                 className="super-color" 
                                 title= {
                                     <div className="dropdown-title">
-                                        <Icon.Filter 
+                                        <Icon.Code 
                                             className="icon"
                                         />
                                         <span className="title">
-                                            UI Components
+                                            System Administration
                                             <Icon.ChevronRight 
                                                 className="icon fr"
                                             />
@@ -97,379 +56,298 @@ class SideMenuLight extends React.Component {
                                 id="basic-nav-dropdown">
                                 <NavLink  
                                     activeClassName="drpMenu"
-                                    to="/ui-components/alerts/" 
+                                    to="/contractor-management/" 
                                     className="dropdown-item">
-                                    <Icon.Bell 
+                                    <Icon.UserX 
                                         className="icon" 
                                     />
-                                    Alerts
+                                    Contractor Management
                                 </NavLink>
                                 <NavLink 
                                     activeClassName="drpMenu"
-                                    to="/ui-components/badges/" 
+                                    to="/products-services/" 
                                     className="dropdown-item"> 
-                                    <Icon.Award 
+                                    <Icon.UserX 
                                         className="icon" 
                                     /> 
-                                    Badges
+                                    Products and Services
                                 </NavLink>
+                                
                                 <NavLink 
                                     activeClassName="drpMenu"
-                                    to="/ui-components/buttons/" 
+                                    to="/user-management/" 
                                     className="dropdown-item">
-                                    <Icon.ArrowRightCircle 
+                                    <Icon.Users
                                         className="icon" 
                                     />
-                                    Buttons
+                                    User Management
                                 </NavLink>
-                                <NavLink 
+                            </NavDropdown>
+                            
+                            <NavDropdown 
+                                className="super-color" 
+                                title= {
+                                    <div className="dropdown-title">
+                                        <Icon.Filter 
+                                            className="icon"
+                                        />
+                                        <span className="title">
+                                            Household Beneficiaries
+                                            <Icon.ChevronRight 
+                                                className="icon fr"
+                                            />
+                                        </span>
+                                    </div>
+                                }
+                                id="basic-nav-dropdown">
+                                <NavLink  
                                     activeClassName="drpMenu"
-                                    to="/ui-components/cards/" 
+                                    to="/registration/" 
                                     className="dropdown-item">
-                                    <Icon.Layers 
+                                    <Icon.Database 
                                         className="icon" 
                                     />
-                                    Cards
+                                    Registration
                                 </NavLink>
                                 <NavLink 
                                     activeClassName="drpMenu"
-                                    to="/ui-components/dropdowns/" 
-                                    className="dropdown-item">
-                                    <Icon.ArrowDownCircle 
+                                    to="/beneficiary-targeting/" 
+                                    className="dropdown-item"> 
+                                    <Icon.Database 
                                         className="icon" 
                                     /> 
-                                    Dropdowns
+                                    Targeting 
+                                </NavLink>
+                                
+                            </NavDropdown>
+                         
+                            <NavDropdown 
+                                className="super-color" 
+                                title= {
+                                    <div className="dropdown-title">
+                                        <Icon.Filter 
+                                            className="icon"
+                                        />
+                                        <span className="title">
+                                            Request for OSS Service
+                                            <Icon.ChevronRight 
+                                                className="icon fr"
+                                            />
+                                        </span>
+                                    </div>
+                                }
+                                id="basic-nav-dropdown">
+                                <NavLink  
+                                    activeClassName="drpMenu"
+                                    to="/technology-choice/" 
+                                    className="dropdown-item">
+                                    <Icon.Database 
+                                        className="icon" 
+                                    />
+                                    Technology Choice
                                 </NavLink>
                                 <NavLink 
                                     activeClassName="drpMenu"
-                                    to="/ui-components/forms/" 
-                                    className="dropdown-item">
-                                    <Icon.FileText 
+                                    to="/tech-selection/" 
+                                    className="dropdown-item"> 
+                                    <Icon.Database 
                                         className="icon" 
                                     /> 
-                                    Forms
+                                    Technology Selection 
                                 </NavLink>
                                 <NavLink 
                                     activeClassName="drpMenu"
-                                    to="/ui-components/list-groups/" 
+                                    to="/tech-approval/" 
+                                    className="dropdown-item">
+                                    <Icon.Check 
+                                        className="icon" 
+                                    />
+                                    Approval or Rejection
+                                </NavLink>
+                                <NavLink 
+                                    activeClassName="drpMenu"
+                                    to="/tech-cost/" 
+                                    className="dropdown-item">
+                                    <Icon.DollarSign
+                                        className="icon" 
+                                    />
+                                    Technology Cost
+                                </NavLink>
+                            </NavDropdown>
+
+                            <NavDropdown 
+                                className="super-color" 
+                                title= {
+                                    <div className="dropdown-title">
+                                        <Icon.Filter 
+                                            className="icon"
+                                        />
+                                        <span className="title">
+                                            Contribute for OSS Service
+                                            <Icon.ChevronRight 
+                                                className="icon fr"
+                                            />
+                                        </span>
+                                    </div>
+                                }
+                                id="basic-nav-dropdown">
+                                
+                                <NavLink 
+                                    activeClassName="drpMenu"
+                                    to="/payment/" 
+                                    className="dropdown-item"> 
+                                    <Icon.DollarSign 
+                                        className="icon" 
+                                    /> 
+                                    Contribute for Service
+                                </NavLink>
+                                
+                            </NavDropdown>
+
+                            <NavDropdown 
+                                className="super-color" 
+                                title= {
+                                    <div className="dropdown-title">
+                                        <Icon.Filter 
+                                            className="icon"
+                                        />
+                                        <span className="title">
+                                            OSS Works
+                                            <Icon.ChevronRight 
+                                                className="icon fr"
+                                            />
+                                        </span>
+                                    </div>
+                                }
+                                id="basic-nav-dropdown">
+                                <NavLink  
+                                    activeClassName="drpMenu"
+                                    to="/contractor-allocation/" 
+                                    className="dropdown-item">
+                                    <Icon.ExternalLink
+                                        className="icon" 
+                                    />
+                                    Contractor Allocation
+                                </NavLink>
+                                <NavLink 
+                                    activeClassName="drpMenu"
+                                    to="/works-start/" 
+                                    className="dropdown-item"> 
+                                    <Icon.Calendar 
+                                        className="icon" 
+                                    /> 
+                                    Works Start
+                                </NavLink>
+                                <NavLink 
+                                    activeClassName="drpMenu"
+                                    to="/works-progress/" 
                                     className="dropdown-item">
                                     <Icon.List 
                                         className="icon" 
                                     />
-                                    List Groups
-                                </NavLink> 
-                                <NavLink 
-                                    activeClassName="drpMenu"
-                                    to="/ui-components/modals/" 
-                                    className="dropdown-item">
-                                    <Icon.Airplay 
-                                        className="icon" 
-                                    /> 
-                                    Modals
+                                    Work Status Updates
                                 </NavLink>
                                 <NavLink 
                                     activeClassName="drpMenu"
-                                    to="/ui-components/progress-bars/" 
+                                    to="/works-completion/" 
                                     className="dropdown-item">
-                                    <Icon.TrendingUp 
+                                    <Icon.Database
                                         className="icon" 
                                     />
-                                    Progress Bars
+                                    Works Completion
+                                </NavLink>
+                            </NavDropdown>
+
+                            <NavDropdown 
+                                className="super-color" 
+                                title= {
+                                    <div className="dropdown-title">
+                                        <Icon.Filter 
+                                            className="icon"
+                                        />
+                                        <span className="title">
+                                            Project Reports
+                                            <Icon.ChevronRight 
+                                                className="icon fr"
+                                            />
+                                        </span>
+                                    </div>
+                                }
+                                id="basic-nav-dropdown">
+                                <NavLink  
+                                    activeClassName="drpMenu"
+                                    to="/household-reports/" 
+                                    className="dropdown-item">
+                                    <Icon.ExternalLink
+                                        className="icon" 
+                                    />
+                                    Household Reports
                                 </NavLink>
                                 <NavLink 
                                     activeClassName="drpMenu"
-                                    to="/ui-components/tables/" 
-                                    className="dropdown-item">
-                                    <Icon.Database 
+                                    to="/area-reports/" 
+                                    className="dropdown-item"> 
+                                    <Icon.Calendar 
                                         className="icon" 
                                     /> 
-                                    Tables
+                                    Block/Area Reports
                                 </NavLink>
                                 <NavLink 
                                     activeClassName="drpMenu"
-                                    to="/ui-components/tabs/" 
+                                    to="/project-reports/" 
                                     className="dropdown-item">
-                                    <Icon.Triangle 
+                                    <Icon.List 
                                         className="icon" 
-                                    /> 
-                                    Tabs
-                                </NavLink>
-                            </NavDropdown>
-
-                            <NavDropdown title= {
-                                <div className="dropdown-title">
-                                    <Icon.User 
-                                        className="icon"
-                                    /> 
-                                    <span className="title">
-                                        User 
-                                        <Icon.ChevronRight 
-                                            className="icon fr"
-                                        /> 
-                                    </span>
-                                </div>
-                            }
-                            id="basic-nav-dropdown">
-                                <NavLink 
-                                    to="/signup/" 
-                                    className="dropdown-item" 
-                                    target="_blank">
-                                    <Icon.UserPlus 
-                                        className="icon" 
-                                    /> 
-                                    Sign Up
-                                </NavLink>
-                                <NavLink 
-                                    to="/login/" 
-                                    className="dropdown-item" 
-                                    target="_blank"> 
-                                    <Icon.UserCheck 
-                                        className="icon" 
-                                    /> 
-                                    Login
-                                </NavLink>
-                                <NavLink 
-                                    to="/forgot-password/" 
-                                    className="dropdown-item" 
-                                    target="_blank">
-                                    <Icon.Unlock 
-                                        className="icon" 
-                                    /> 
-                                    Forgot Password
+                                    />
+                                    Overall Reports
                                 </NavLink>
                             </NavDropdown>
                             
-                            <NavDropdown title= {
-                                <div className="dropdown-title">
-                                    <Icon.BarChart2 
-                                        className="icon"
-                                    /> 
-                                    <span className="title">
-                                        Apex Charts 
-                                        <Icon.ChevronRight 
-                                            className="icon fr"
-                                        /> 
-                                    </span>
-                                </div>
-                            }
-                            id="basic-nav-dropdown">
-                                <NavLink 
-                                    to="/line-charts/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
+                            <NavDropdown 
+                                className="super-color" 
+                                title= {
+                                    <div className="dropdown-title">
+                                        <Icon.Filter 
+                                            className="icon"
+                                        />
+                                        <span className="title">
+                                            Case Management
+                                            <Icon.ChevronRight 
+                                                className="icon fr"
+                                            />
+                                        </span>
+                                    </div>
+                                }
+                                id="basic-nav-dropdown">
+                                <NavLink  
+                                    activeClassName="drpMenu"
+                                    to="/complaints-received/" 
+                                    className="dropdown-item">
+                                    <Icon.ExternalLink
                                         className="icon" 
-                                    /> 
-                                    Line Charts
+                                    />
+                                    Received Complaints
                                 </NavLink>
                                 <NavLink 
-                                    to="/area-charts/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
+                                    activeClassName="drpMenu"
+                                    to="/complaints-status/" 
+                                    className="dropdown-item"> 
+                                    <Icon.Calendar 
                                         className="icon" 
                                     /> 
-                                    Area Charts
+                                    Complaint Status
                                 </NavLink>
                                 <NavLink 
-                                    to="/column-charts/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
+                                    activeClassName="drpMenu"
+                                    to="/complaints-resolved/" 
+                                    className="dropdown-item">
+                                    <Icon.List 
                                         className="icon" 
-                                    /> 
-                                    Column Charts
-                                </NavLink>
-                                <NavLink 
-                                    to="/bar-charts/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Bar Charts
-                                </NavLink>
-                                <NavLink 
-                                    to="/mixed-charts/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Mixed Charts
-                                </NavLink>
-                                <NavLink 
-                                    to="/pie-donuts-charts/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Pie and Donuts Charts
+                                    />
+                                    Resolved Complaints
                                 </NavLink>
                             </NavDropdown>
-
-                            <NavDropdown title= {
-                                <div className="dropdown-title">
-                                    <Icon.MapPin 
-                                        className="icon"
-                                    /> 
-                                    <span className="title">
-                                        Map 
-                                        <Icon.ChevronRight 
-                                            className="icon fr"
-                                        /> 
-                                    </span>
-                                </div>
-                            }
-                            id="basic-nav-dropdown">
-                                <NavLink 
-                                    to="/google-map/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Google Map
-                                </NavLink>
-                                <NavLink 
-                                    to="/vector-map/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Vector Maps
-                                </NavLink>
-                            </NavDropdown>
-                            
-                            <NavDropdown title= {
-                                <div className="dropdown-title">
-                                    <Icon.Heart 
-                                        className="icon"
-                                    /> 
-                                    <span className="title">
-                                        Icons 
-                                        <Icon.ChevronRight 
-                                            className="icon fr"
-                                        /> 
-                                    </span>
-                                </div>
-                            }
-                            id="basic-nav-dropdown">
-                                <NavLink 
-                                    to="/feather-icons/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Feather Icons
-                                </NavLink>
-                                <NavLink 
-                                    to="/icofont-icons/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Icofont Icons
-                                </NavLink>    
-                            </NavDropdown>
-
-                            <NavDropdown title= {
-                                <div className="dropdown-title">
-                                    <Icon.FileText 
-                                        className="icon"
-                                    /> 
-                                    <span className="title">
-                                        Pages 
-                                        <Icon.ChevronRight 
-                                            className="icon fr"
-                                        /> 
-                                    </span>
-                                </div>
-                            }
-                            id="basic-nav-dropdown">
-                                <NavLink 
-                                    to="/users-card/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Users Card
-                                </NavLink>
-
-                                <NavLink 
-                                    to="/notifications/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    <span className="title">Notifications</span>
-                                </NavLink>
-
-                                <NavLink 
-                                    to="/time-line/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Time line
-                                </NavLink>
-
-                                <NavLink 
-                                    to="/invoice-template/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Invoice Template
-                                </NavLink>
-
-                                <NavLink 
-                                    to="/gallery/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Gallery
-                                </NavLink>
-
-                                <NavLink 
-                                    to="/faq/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Faq
-                                </NavLink>
-                                <NavLink 
-                                    to="/pricing/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Pricing
-                                </NavLink>
-
-                                <NavLink 
-                                    to="/error-404/" 
-                                    className="dropdown-item" 
-                                    activeClassName="drpMenu">
-                                    <Icon.ChevronRight 
-                                        className="icon" 
-                                    /> 
-                                    Error 404 
-                                </NavLink>
-                            </NavDropdown>
+  
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
