@@ -41,15 +41,7 @@ class AddContractorElement extends React.Component {
                                                 </Form.Control>
                                             </Form.Group>
 
-                                            <Form.Group as={Col} controlId="category-area">
-                                                <Form.Label>category Area</Form.Label>
-                                                <Form.Control as="select">
-                                                    <option>New Works</option>
-                                                    <option>Rehabilitation Works</option>
-                                                    <option>Both Works</option>
-                                                    <option>...</option>
-                                                </Form.Control>
-                                            </Form.Group>
+                                            
                                         </Form.Row>
                                         <Form.Row>
                                             <Form.Group as={Col} controlId="Address">
