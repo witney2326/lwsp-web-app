@@ -2,7 +2,7 @@ import React from 'react';
 import {Row, Col, Breadcrumb, Form, Button, InputGroup, FormControl, DropdownButton, Dropdown} from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
-const HHSearchElement = () => {
+const AreaSearchElement = () => {
     return (
     
 <Row>
@@ -36,15 +36,7 @@ const HHSearchElement = () => {
                                <option>Select Block...</option>
                                <option>...</option>
                            </Form.Control>
-                       </Form.Group>
-
-                       <Form.Group as={Col} controlId="plot">
-                           <Form.Label>HH Code.</Form.Label>
-                           <Form.Control as="select">
-                               <option>Select HH Code...</option>
-                               <option>...</option>
-                           </Form.Control>
-                       </Form.Group>                      
+                       </Form.Group>                  
                    </Form.Row>
                </Form>
            </div>
@@ -54,4 +46,4 @@ const HHSearchElement = () => {
     )
 }
 
-export default HHSearchElement
+export default AreaSearchElement

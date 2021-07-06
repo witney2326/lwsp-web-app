@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import Navigation from '../../components/Navigation/Navigation';
 import Footer from '../Footer/Footer';
 
-import HHSearchElement from '../../components/Reports/HHSearchElement';
-import HHDeliveryStatusElememnt from '../../components/Reports/HHDeliveryStatusElement';
+import AreaSearchElement from '../../components/Reports/AreaSearchElement';
+import AreaDeliveryStatusElement from '../../components/Reports/AreaDeliveryStatusElement';
 
-class HHProgress extends React.Component {
+class AreaProgress extends React.Component {
     state = {
         sideMenu: true
     };
@@ -27,11 +27,11 @@ class HHProgress extends React.Component {
                     {/* Breadcrumb */}
                     <div className="main-content-header">
                         <Breadcrumb>
-                            <h1>Works Progress</h1>
+                            <h1>Area OSS Progress</h1>
                             <Link to="/" className="breadcrumb-item">
                                 Dashboard
                             </Link>
-                            <Breadcrumb.Item active>Works Progress</Breadcrumb.Item>
+                            <Breadcrumb.Item active>Area OSS Progress</Breadcrumb.Item>
                         </Breadcrumb>
                     </div>
                     {/* End Breadcrumb */}
@@ -46,7 +46,7 @@ class HHProgress extends React.Component {
                                     <Row>
                                         <Col lg={12}>
                                             {/* File path: */}
-                                            <HHSearchElement />
+                                            <AreaSearchElement />
                                         </Col>
                                     </Row>
                                 </div>
@@ -55,7 +55,7 @@ class HHProgress extends React.Component {
                                     <Row>
                                         <Col lg={12}>
                                             {/* File path: */}
-                                            < HHDeliveryStatusElememnt />
+                                            < AreaDeliveryStatusElement />
                                         </Col>
                                     </Row>
                                 </div>
@@ -81,4 +81,4 @@ class HHProgress extends React.Component {
     }
 }
 
-export default HHProgress;
+export default AreaProgress;
