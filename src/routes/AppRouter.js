@@ -59,6 +59,9 @@ import BeneficiaryAdd from "../pages/BeneficiaryTargeting/BeneficiaryAdd";
 import HHProgress from "../pages/Reports/HHProgress";
 import AreaProgress from "../pages/Reports/AreaProgress";
 import CityProgress from "../pages/Reports/CityProgress";
+import CaseRegister from "../pages/CaseMgt/CaseRegister";
+import CaseStatus from "../pages/CaseMgt/CaseStatus";
+import ResolvedCases from "../pages/CaseMgt/ResolvedCases";
 
 import '../assets/css/style.css';
 import '../assets/css/responsive.css';
@@ -127,6 +130,9 @@ const AppRouter = () => (
         <Route path="/household-reports/" component={HHProgress} />
         <Route path="/area-reports/" component={AreaProgress} />
         <Route path="/project-reports/" component={CityProgress} />
+        <Route path="/complaints-received/" component={CaseRegister} />
+        <Route path="/complaints-status/" component={CaseStatus} />
+        <Route path="/complaints-resolved/" component={ResolvedCases} />
     </React.Fragment>
 );
 
